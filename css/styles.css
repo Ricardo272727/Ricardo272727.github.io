@@ -147,8 +147,6 @@ header .section-items .info-item p{
 	margin-top: 0.5rem;
 }
 
-
-
 @media screen and (max-width: 768px){
 
 	header{
@@ -156,11 +154,17 @@ header .section-items .info-item p{
 		padding-top: 7rem;
 	}
 
+	header .section-items{
+		margin-top:2rem;
+		padding-bottom: 2rem;
+	}
+
 }
 
 /**
 Portfolio
 **/
+
 section#portfolio{
 	background: var(--primary);
 }
@@ -262,15 +266,28 @@ section#about .info .platforms{
 }
 
 section#about .info .platforms .platform i{
-	font-size: 5rem;
+	font-size: 3rem;
+}
+
+section#about .info .platforms .platform span{
+		width: 100%;
+		display: block;
 }
 
 section#about .info .platforms .platform{
 	transition:all 1s ease-out;
+	margin-top: 1rem;
 }
 
 section#about .info .platforms .platform:hover{
 	transform: rotateZ(360deg);
+}
+
+@media screen and (max-width:768px){
+	section#about .info .platforms .platform i{
+		font-size: 4rem;
+	}
+
 }
 
 /**
@@ -280,7 +297,13 @@ Footer
 footer{
 	width: 100%;
 	background: var(--secondary);
-	padding: 3rem;
+	padding: 3rem 0; 
+}
+
+footer div.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 footer p{
@@ -295,4 +318,12 @@ footer a{
 
 footer a:hover{
 	color: var(--third);
+}
+
+@media screen and (max-width:768px){
+	footer div.container{
+		display: block;
+		text-align: center;
+	}
+
 }

@@ -15,13 +15,16 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="fontawesome-free-5.8.2-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <script type="text/javascript" src="WOW-animation/dist/wow.min.js"></script>
     <script type="text/javascript" src="js/jQuery3.4.1.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/scrollspy-jquery.js"></script>
+    
 	<title>Ricardo Cuanalo | Programmer </title>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md container fixed-top navbar-dark">
+<nav class="navbar navbar-expand-md container fixed-top navbar-dark wow fadeInDown">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -39,7 +42,7 @@
       <li class="nav-item dropdown dropdown-hover contact" >
       	<a class="nav-link dropdown-toggle" href="#contact" id="dropContactButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contacto</a>
       	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-	    	<a class="dropdown-item " href="#">
+	    	<a class="dropdown-item copy" href="#" title="cuanaloricardo@gmail.com">
 				<i class="fas fa-envelope"></i>		
 				<span>cuanaloricardo@gmail.com</span>
 	    	</a>
@@ -55,7 +58,7 @@
 
 
 <header id="home">
-	<div class="container">
+	<div class="container wow zoomIn">
 		<h1>Desarrollo páginas web para tu negocio</h1>
 		<p class="my-4">
 			<i class="fas fa-envelope"></i>
@@ -64,21 +67,21 @@
 	</div>
 	<div class="section-items container">
 		<div class="row">
-			<div class="info-item col-12 col-md-4">
+			<div class="info-item col-12 col-md-4 wow zoomIn">
 				<div class="icon-item">
 					<i class="fas fa-server"></i>
 				</div>
 						
 				<p>Web Hosting</p>
 			</div>
-			<div class="info-item col-12 col-md-4">	 <div class="icon-item">
+			<div class="info-item col-12 col-md-4 wow zoomIn">	 <div class="icon-item">
 					<i class="fas fa-mobile-alt"></i>
 				</div>		
 				
 				<p>Diseño adaptable a dispositivos móviles</p>
 			</div>
 			
-			<div class="info-item col-12 col-md-4">
+			<div class="info-item col-12 col-md-4 wow zoomIn">
 				<div class="icon-item">
 					<i class="fas fa-rocket"></i>
 				</div>
@@ -92,7 +95,7 @@
 	<h1>Portafolio</h1>
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-md-6">
+			<div class="col-12 col-md-6 wow zoomInLeft">
 				<a href="https://www.vanguardiaradio.net/" target="_blank">
 				<div class="item-port card">
 					<img src="images/pag1.png" class="card-img-top">
@@ -106,7 +109,7 @@
 				</div>
 				</a>
 			</div>
-			<div class="col-12 col-md-6">
+			<div class="col-12 col-md-6 wow zoomInRight">
 				<a href="#">
 				<div class="item-port card">
 					<img src="images/pag3.png" class="card-img-top">
@@ -124,8 +127,8 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12 col-md-4">
-				<a href="#">
+			<div class="col-12 col-md-4 wow zoomIn">
+				<a href="https://www.aproviva.com" target="_blank">
 				<div class="item-port card">
 					<img src="images/pag2.jpg" class="card-img-top">
 					<div class="view-more">
@@ -138,7 +141,7 @@
 				</div>
 				</a>
 			</div>
-			<div class="col-12 col-md-4">
+			<div class="col-12 col-md-4 wow zoomIn">
 				<a href="#">
 				<div class="item-port card">
 					<img src="images/pag4.png" class="card-img-top">
@@ -152,7 +155,7 @@
 				</div>
 				</a>
 			</div>
-			<div class="col-12 col-md-4">
+			<div class="col-12 col-md-4 wow zoomIn">
 				<a href="#">
 				<div class="item-port card">
 					<img src="images/pag5.png" class="card-img-top">
@@ -173,12 +176,12 @@
 <section id="about">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-md-4 offset-md-4">
+			<div class="col-12 col-md-4 offset-md-4 wow bounceInDown">
 				<div class="img">
 					<img src="images/myAvatar.png" class="img-fluid">
 				</div>
 			</div>	
-			<div class="col-12 col-md-8 offset-md-2">
+			<div class="col-12 col-md-8 offset-md-2 wow bounceInUp">
 				<div class="info">
 					<h4>Ricardo Cuanalo</h4>	
 					<p>Me gusta la programación y hacer páginas web, escucho las necesidades de mis clientes para darles el mejor resultado a un precio justo.</p>
@@ -216,15 +219,30 @@
 	</div>
 </section>
 
-<footer>
-	<div class="d-flex justify-content-between align-items-center container">
-		<a href="#"><i class="fas fa-envelope"></i> cuanaloricardo@gmail.com </a>
+<footer class="wow fadeInRight">
+	<div class="container">
+		<a href="#" id="email" class="copy" title="cuanaloricardo@gmail.com">	<i class="fas fa-envelope"></i> cuanaloricardo@gmail.com </a>
 		<p>Ricardo Cuanalo | 2019</p>
 		<a href="https://wa.me/5212227420516" target="_blank"><i class="fab fa-whatsapp"></i> +52 (1) 222 742 0516</a>
 	</div>
 </footer>
 
+<div class="modal" tabindex="-1" role="dialog" id="modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">  
+      <div class="modal-header">
+      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/wow-init.js"></script>
 <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

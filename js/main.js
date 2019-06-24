@@ -31,16 +31,27 @@ $(document).ready(function(){
 		for(let i = 0; i < children.length; i++){
 			let classes = children[i].className;
 			if(classes.indexOf(class_remove) !== -1){
-				console.log(children[i]);
 				$(children[i]).removeClass(class_remove);
 			}
 		}
 	}
 
 	/**
-	
+	Copy email
 	**/
-
+	$(".copy").on("click",function(e){
+		e.preventDefault();
+		let content = $(this).attr('title');
+		let aux = document.createElement("input");
+		aux.setAttribute("value",content);
+		document.body.appendChild(aux);
+		aux.select();
+		document.execCommand("copy");
+		document.body.removeChild(aux);
+		$("#modal-body").empty();
+		$("#modal-body").append("<h5>Copiado al portapapeles!</h5>");
+		$("#modal").modal('show');
+	});
 
 
 
