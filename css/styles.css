@@ -1,0 +1,298 @@
+/**
+FONTS
+**/
+
+@font-face{
+	font-family:'Nanum Gothic';
+	src: url(../fonts/NanumGothic-Regular.ttf);
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	--primary:rgba(14,125,187,92);
+	--secondary:rgba(33,9,122,82);
+	--gradient:linear-gradient(to right, rgba(33,9,122,60),rgba(14,125,187,60));
+	--gradient2:linear-gradient(to right, rgba(33,9,122,60), #0dc5dd);
+	--third: #0dc5dd;
+	font-family: 'Nanum Gothic';	
+}
+
+/**
+NAV
+**/
+
+nav {
+	background: rgba(0,0,0,.8);
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+#navbarNav {
+	justify-content: center;
+}
+
+.nav-item{
+	padding-left:1em;
+	padding-right:1em;
+}
+
+.nav-item a{
+	transition:all 400ms ease-in-out;
+	text-align: center;
+}
+
+.nav-item .fa-home{
+	font-size: 1.3rem;
+}
+
+.nav-item.active a,
+.nav-item a:hover{
+	color: var(--third) !important;
+	border-bottom:1px solid white;
+}
+
+.navbar-dark .navbar-toggler{
+	color: white;
+	border-color: transparent;
+}
+
+
+/*Dropdown*/
+.dropdown .dropdown-menu{
+	padding: 0;
+}
+
+.dropdown .dropdown-menu .dropdown-item{
+	background: var(--gradient);
+	color:white;
+	padding: 1em;
+	width: 100%;
+}
+
+.dropdown .dropdown-menu .dropdown-item i{
+	width: 100%;
+	display: block;
+	margin-bottom: 0.5em;
+	font-size: 1.3rem;
+}
+
+.dropdown .dropdown-menu .dropdown-item span{
+	width: 100%;
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover{
+	border:none;
+}
+
+
+
+@media screen and (max-width: 768px){
+	.nav-item.active a,
+	.nav-item a:hover{
+		border:none;
+	}
+}
+
+/**
+HEADER
+**/
+
+header{
+	width:100%;
+	height: 100vh;
+	background: var(--gradient);
+	text-align: center;
+	padding-top:9.5rem;
+}
+
+header h1{
+	color:white;
+}
+
+header p{
+	font-size: 1.3rem;
+	color: white;
+}
+
+header .section-items{
+	margin-top: 5rem;
+}
+
+header .section-items .info-item{
+	margin-top: 0.5rem;
+}
+
+header .section-items .info-item .icon-item{
+	width: 60%;
+	margin:0 auto;
+	font-size: 5rem;
+	color:white;
+	text-align: center;
+}
+
+header .section-items .info-item .icon-item i{
+	background: var(--primary);
+	border-radius:50%;
+	padding: 2rem;
+}
+
+header .section-items .info-item:nth-child(2) .icon-item i{
+	padding: 2rem 3rem;
+}
+
+header .section-items .info-item p{
+	margin-top: 0.5rem;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+	header{
+		height: auto;
+		padding-top: 7rem;
+	}
+
+}
+
+/**
+Portfolio
+**/
+section#portfolio{
+	background: var(--primary);
+}
+
+section#portfolio .row .col-12{
+	padding: 1rem;
+}
+
+section#portfolio h1{
+	text-align: center;
+	color:white;
+	padding: 2rem;
+}
+
+section#portfolio .item-port{
+	border:none;
+	box-shadow: 0 0 0.4em black;
+}
+
+section#portfolio .item-port .card-body{
+	text-align: center;
+	background: var(--gradient);
+	color:white;
+}
+
+section#portfolio a:hover{
+	text-decoration: none;
+}
+
+section#portfolio a .item-port{
+	transition:all 400ms ease-in-out;
+}
+
+section#portfolio a .item-port:hover{
+	text-decoration: none;
+	transform:scale(1.05);
+}
+
+section#portfolio .view-more{
+	width: 100%;
+	height: 0%;
+	opacity: 0;
+	position: absolute;
+	top:0;
+	left:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition:all 300ms ease-in;
+	background: rgba(0,0,0,.7);
+}
+
+section#portfolio a:hover .view-more{
+	height: 100%;
+	opacity: 1;
+	color:white;
+}
+
+section#portfolio a:hover .view-more {
+
+}
+
+/**
+About
+**/
+
+section#about{
+	background: var(--gradient2);
+}
+
+section#about .row{
+	padding: 4rem 0;
+}
+
+section#about .img{
+	width: 70%;
+	margin:0 auto;
+}
+
+section#about .img img{
+	border-radius: 50%;
+}
+
+section#about .info{
+	margin-top: 2.5rem;
+}
+
+section#about .info{
+	text-align: center;
+	color: white;
+}
+
+section#about .info p{
+	font-size: 19px;
+}
+
+section#about .info .platforms{
+	padding: 2rem 0;
+}
+
+section#about .info .platforms .platform i{
+	font-size: 5rem;
+}
+
+section#about .info .platforms .platform{
+	transition:all 1s ease-out;
+}
+
+section#about .info .platforms .platform:hover{
+	transform: rotateZ(360deg);
+}
+
+/**
+Footer
+**/
+
+footer{
+	width: 100%;
+	background: var(--secondary);
+	padding: 3rem;
+}
+
+footer p{
+	margin-bottom: 0px;
+	color:white;
+}
+
+footer a{
+	transition:all 300ms ease-in;
+	color: white;
+}
+
+footer a:hover{
+	color: var(--third);
+}
