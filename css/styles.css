@@ -117,6 +117,10 @@ header p{
 	color: white;
 }
 
+header a:hover{
+	text-decoration: none;
+}
+
 header .section-items{
 	margin-top: 5rem;
 }
@@ -159,6 +163,31 @@ header .section-items .info-item p{
 		padding-bottom: 2rem;
 	}
 
+}
+
+/**
+Info
+**/
+section#info{
+	background: var(--secondary);	
+	padding: 3rem 0;
+	text-align: justify;
+}
+
+section .info{
+	width: 70%;
+	margin: 0 auto;
+}
+
+section#info h2{
+	color: white;
+	text-align: center;
+}
+
+section#info p{
+	color: white;
+	margin-bottom: 0;
+	letter-spacing: 1px;
 }
 
 /**
