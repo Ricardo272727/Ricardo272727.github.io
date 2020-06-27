@@ -1,0 +1,19 @@
+{
+  "header": {
+    "title": "Hello!",
+    "subtitle": "I'm Ricardo",
+    "text": "Computer science student and JS developer",
+    "image": "https://firebasestorage.googleapis.com/v0/b/ricardo272727-github-io.appspot.com/o/images%2Favatar.png?alt=media&token=a6d55898-f7ed-42d5-ae8f-5828dec464a0"
+  },
+  "about": {
+    "text": "I'm from Mexico, now I study computer science in BUAP, I like a lot programming."
+  },
+  "projects": [
+    {
+      "id": 0,
+      "name": "Streaming radio website",
+      "link": "https://radioenlinea.click",
+      "image": "https://firebasestorage.googleapis.com/v0/b/ricardo272727-github-io.appspot.com/o/images%2FCaptura%20de%20pantalla.png?alt=media&token=16b6a05f-cb5f-4db2-8187-58ee6e20aac1"
+    }
+  ]
+}

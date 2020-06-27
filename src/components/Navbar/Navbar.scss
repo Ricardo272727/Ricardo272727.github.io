@@ -1,0 +1,77 @@
+@import "../variables";
+
+.navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000 !important;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: 1.2rem;
+  transition: height 500ms ease;
+  .btn-toggle {
+    display: block;
+  }
+  .btn-toggle {
+    background: transparent;
+    color: white;
+    border: none;
+  }
+  ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    &.show {
+      display: block;
+    }
+    &.hidden {
+      height: 0;
+      display: none;
+    }
+    li {
+      width: 100%;
+      display: block;
+      list-style: none;
+      cursor: pointer;
+      a {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        display: block;
+        border-bottom: 3px solid transparent;
+        transition: all 100ms ease-in-out;
+        color: white;
+
+        &:hover {
+          border-bottom: 3px solid white;
+          cursor: pointer;
+          color: $light;
+          text-decoration: none;
+        }
+        svg {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    .btn-toggle {
+      display: none;
+    }
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      li {
+        text-align: center;
+        display: inline-block;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

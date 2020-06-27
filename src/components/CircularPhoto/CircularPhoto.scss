@@ -1,0 +1,10 @@
+.circular-photo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}

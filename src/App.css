@@ -1,0 +1,10 @@
+
+
+@font-face{
+  src: url('./fonts/Bungee-Regular.ttf');
+  font-family: Bungee-Regular;
+}
+
+h1, h2, h3{
+  font-family: Bungee-Regular;
+}

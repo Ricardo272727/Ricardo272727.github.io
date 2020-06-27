@@ -1,0 +1,23 @@
+@import "../variables";
+
+.tab{
+  width: 100%;
+  background: $secondary;
+  padding: 1rem 0.5rem 0 0.5rem;
+  color: white;
+  .tab-child{
+    display: inline-block;
+    background: $primary;
+    padding: 1rem 12%;
+    border-radius: 9px 9px 0px 0px;
+    box-shadow: 2px -3.5px 6px black;
+  }
+  h4{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: Bungee-Regular;
+  }
+}
