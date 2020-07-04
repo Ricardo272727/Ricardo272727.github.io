@@ -18,13 +18,13 @@
       "id": 0,
       "name": "Streaming radio website",
       "link": "https://radioenlinea.click",
-      "image": "https://github.com/Ricardo272727/Ricardo272727.github.io/blob/master/images/RadioStreaming.png"
+      "image": "RadioStreaming.png"
     },
     {
       "id": 1,
       "name": "Todo list app",
       "link": "https://github.com/Ricardo272727/todo-list-app",
-      "image": "https://github.com/Ricardo272727/Ricardo272727.github.io/blob/master/images/Tasks.png"
+      "image": "Tasks.png"
     } 
   ]
 }

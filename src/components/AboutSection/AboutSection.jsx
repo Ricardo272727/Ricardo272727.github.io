@@ -15,7 +15,7 @@ const AboutSection = props => {
         <Col xs={12} md={{size: 8, offset: 2}}>     
           {
             about.text.map(t => (
-             <p className="wow fadeInLeft">
+             <p className="wow fadeInLeft" key={t}>
               {t}
              </p>
             ))

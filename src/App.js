@@ -15,10 +15,6 @@ function App() {
     new WOW.WOW({ live: false }).init();
   });
 
-  useEffect(() => {
-    // get data
-
-  }, []);
   return (
     <div className="App">
       <Navbar/>
