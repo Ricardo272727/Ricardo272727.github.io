@@ -13,7 +13,13 @@
       "id": 0,
       "name": "Streaming radio website",
       "link": "https://radioenlinea.click",
-      "image": "https://firebasestorage.googleapis.com/v0/b/ricardo272727-github-io.appspot.com/o/images%2FCaptura%20de%20pantalla.png?alt=media&token=16b6a05f-cb5f-4db2-8187-58ee6e20aac1"
-    }
+      "image": "https://github.com/Ricardo272727/Ricardo272727.github.io/blob/master/images/RadioStreaming.png"
+    },
+    {
+      "id": 1,
+      "name": "Todo list app",
+      "link": "https://github.com/Ricardo272727/todo-list-app",
+      "image": "https://github.com/Ricardo272727/Ricardo272727.github.io/blob/master/images/Tasks.png"
+    } 
   ]
 }
