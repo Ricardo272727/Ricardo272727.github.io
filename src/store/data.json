@@ -2,11 +2,16 @@
   "header": {
     "title": "Hello!",
     "subtitle": "I'm Ricardo",
-    "text": "Computer science student and JS developer",
+    "text": "Computer science student and web developer",
     "image": "https://firebasestorage.googleapis.com/v0/b/ricardo272727-github-io.appspot.com/o/images%2Favatar.png?alt=media&token=a6d55898-f7ed-42d5-ae8f-5828dec464a0"
   },
   "about": {
-    "text": "I'm from Mexico, now I study computer science in BUAP, I like a lot programming."
+    "text": [
+      "I like to understand how the things work.",
+      "I enjoy create amazing things",
+      "I study in BUAP"
+    ],
+    "subtext": "#js #reactjs #laravel #nodejs #mongodb"
   },
   "projects": [
     {

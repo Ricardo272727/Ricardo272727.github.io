@@ -24,7 +24,7 @@ function App() {
         <AboutSection/>
       </Element>
       <Element name="projects">
-        <ProjectsSection/>
+        <ProjectsSection />
       </Element>
       <Footer/>
     </div>

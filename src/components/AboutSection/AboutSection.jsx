@@ -6,16 +6,21 @@ import { useSelector } from 'react-redux';
 
 
 const AboutSection = props => {
-  const description = useSelector(state => state.data.about.text);
+  const about = useSelector(state => state.data.about);
  return (
   <section className="about">
     <Tab>About me</Tab>
     <Container className="py-5">
       <Row className="pt-5">
         <Col xs={12} md={{size: 8, offset: 2}}>     
-          <p className="wow backInUp">
-           {description}
-          </p>
+          {
+            about.text.map(t => (
+             <p className="wow fadeInLeft">
+              {t}
+             </p>
+            ))
+          }
+          <p className="subtext wow fadeInRight">{about.subtext}</p>
         </Col>
       </Row>
 

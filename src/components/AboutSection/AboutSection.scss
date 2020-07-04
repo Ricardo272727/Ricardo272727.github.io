@@ -5,7 +5,10 @@ section.about{
   color: white; 
   font-size: 1.5rem;
   box-shadow: 2px 2px 2px black;
-
+  .subtext{
+    color: #d5d5d5;
+    font-size: 1.3rem;
+  }
 }
 
 @media (min-width: 768px){

@@ -3,7 +3,7 @@ import "./Project.scss";
 
 const Project = props => {
  return (
-  <div className="project">
+  <div className="project wow fadeInTopLeft">
     <a href={props.link} target="_blank" rel="noreferrer noopener">
      <div className="image">
        <img src={props.image} className="img-fluid" alt={props.name || "Project image"}/>
