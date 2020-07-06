@@ -25,6 +25,12 @@
       "name": "Todo list app",
       "link": "https://github.com/Ricardo272727/todo-list-app",
       "image": "Tasks.png"
+    },
+    {
+      "id": 2,
+      "name": "Piano with react",
+      "link": "https://github.com/Ricardo272727/react-piano",
+      "image": "Piano.png"
     } 
   ]
 }

@@ -8,7 +8,7 @@ const Navbar = (props) => {
 
   const toggle = () => setOpen(!open);
 
-  const classUl = window.innerWidth > 768 ? "" : !open ? "hidden" : "";
+  const classUl = window.innerWidth >= 768 ? "" : (!open ? "hidden" : "");
   const offsetScroll = -50;
 
   return (
