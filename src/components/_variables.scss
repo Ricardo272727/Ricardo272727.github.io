@@ -1,10 +1,10 @@
 $primary: rgba(14,125,187,92);
-$secondary: rgba(33,9,122,82);
-$light: #0DDEF0;
+$secondary: #1639C6;
+$light: #EEEEEE;
 $gradient: linear-gradient(to right, rgba(33,9,122,60),rgba(14,125,187,60));
 
 body{
-  background: $secondary !important;
+  background: $light !important;
 }
 
 

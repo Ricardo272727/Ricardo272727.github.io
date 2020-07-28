@@ -3,9 +3,12 @@
     "title": "Hello!",
     "subtitle": "I'm Ricardo",
     "text": "Computer science student and web developer",
-    "image": "https://firebasestorage.googleapis.com/v0/b/ricardo272727-github-io.appspot.com/o/images%2Favatar.png?alt=media&token=a6d55898-f7ed-42d5-ae8f-5828dec464a0"
+    "image": "/images/avatar.png"
   },
   "about": {
+    "hello": "Hi, I'm Ricardo Cuanalo, software developer.",
+    "description": "Soy de méxico, tengo 21 años y soy estudiante de ciencias de la computación. \n\n Me interesa el desarrollo en la web, en especial el desarrollo de backend, aunque también he aprendido y trabajado en proyectos de frontend. Me considero un desarrollador fullstack, he desarrollado varios proyectos completamente, con el stack MERN,  para Tecnopubli MX y Vanguardia Radio. \n En general me interesan los retos de programación, algoritmos y problemas difíciles de resolver. \n\n Me gusta crear soluciones sencillas, sin adornos y sin complejidad innecesaria",
+    "photo": "/images/avatar.png",
     "text": [
       "I like to understand how the things work.",
       "I enjoy create amazing things",
@@ -18,18 +21,21 @@
       "id": 0,
       "name": "Streaming radio website",
       "link": "https://radioenlinea.click",
+      "description": "Web application to listen radio streaming (React, NodeJs, MySQL)",
       "image": "RadioStreaming.png"
     },
     {
       "id": 1,
       "name": "Todo list app",
       "link": "https://github.com/Ricardo272727/todo-list-app",
+      "description": "To do list app colaborative, organize tasks in a team. (React, NodeJs, MongoDB)",
       "image": "Tasks.png"
     },
     {
       "id": 2,
       "name": "Piano with react",
       "link": "https://github.com/Ricardo272727/react-piano",
+      "description": "A simple web application to play piano. (React)",
       "image": "Piano.png"
     } 
   ]

@@ -1,16 +1,96 @@
 @import "../variables";
 
-section.about{
-  background: $primary;
+.about{
   color: white; 
   font-size: 1.5rem;
-  box-shadow: 2px 2px 2px black;
+  background: $primary;
   .subtext{
     color: #d5d5d5;
     font-size: 1.3rem;
   }
+  
+  .hello{
+    text-align: center;    
+    h3{
+      font-size: 1.3rem;
+    }
+  }
+  .description{
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    margin-top: 2.5rem;
+  }
+  .photo{
+    margin-top: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    img{
+      border-radius: 50%;
+      max-width: 60%;
+    }
+  }
+}
+
+.send-email{
+  width: 90%;
+  margin: auto;
+  margin-top: -2.2rem;
+  padding: 1.5rem 0.7rem;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h5{
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+  a{
+    position: relative;
+    background: white;
+    padding: 0.5rem 0.4rem;
+    color: $primary;
+    border: 2px solid $primary;
+    border-radius: 4px;
+    transition: all 100ms ease-out;
+    font-weight: bold;
+    &:hover{
+      text-decoration: none;
+      background: $primary;
+      color: $light;      
+    }
+  }
 }
 
 @media (min-width: 768px){
-  font-size: 3rem;
+  .about{
+    font-size: 3rem;
+    .hello{
+       
+    }
+    .description{
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+    .photo{
+      margin-top: 3rem;
+      text-align: center;
+      img{        
+        max-width: 30%;
+      }
+    }
+  }
+  .send-email{
+    width: 75%;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    a{
+      min-width: 25%;
+      text-align: center;
+
+    }
+  }
 }

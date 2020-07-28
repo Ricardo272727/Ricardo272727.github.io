@@ -1,21 +1,26 @@
 @import "../variables";
 
+$background: $secondary;
+$color: $light;
+$hover: $light;
+
 .navbar {
   position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10000 !important;
-  background: rgba(0, 0, 0, 0.9);
+  background: $background;
   color: white;
   font-size: 1.2rem;
+  box-shadow: 0.5px 0.5px 3px black;
   transition: height 500ms ease;
   .btn-toggle {
     display: block;
   }
   .btn-toggle {
     background: transparent;
-    color: white;
+    color: $color;
     border: none;
   }
   ul {
@@ -42,12 +47,12 @@
         display: block;
         border-bottom: 3px solid transparent;
         transition: all 100ms ease-in-out;
-        color: white;
+        color: $color;
 
         &:hover {
-          border-bottom: 3px solid white;
+          border-bottom: 3px solid $hover;
           cursor: pointer;
-          color: $light;
+          color: $hover;
           text-decoration: none;
         }
         svg {

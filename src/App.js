@@ -14,6 +14,13 @@ function App() {
   useEffect(() => {
     new WOW.WOW({ live: false }).init();
   });
+  
+  useEffect(() => {
+    let loading = document.getElementById('loading');
+    if(loading){
+      loading.style.display = 'none';
+    }
+  }, []);
 
   return (
     <div className="App">
