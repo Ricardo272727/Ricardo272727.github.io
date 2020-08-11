@@ -1,0 +1,45 @@
+@import "../variables";
+
+.send-email{
+  width: 90%;
+  margin: auto;
+  padding: 2rem 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h5{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  a{
+    min-width: 80%;
+    text-align: center;
+    position: relative;
+    display: block;
+    background: $light;
+    padding: 1rem 0.6rem;
+    color: $secondary;
+    border-radius: 4px;
+    transition: all 100ms ease-out;
+    font-weight: bold;
+    font-size: 1.2rem;
+    &:hover{
+      text-decoration: none;
+      background: $secondary;
+      color: $light;      
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .send-email{
+    width: 75%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    a{
+      min-width: 50%;
+      text-align: center;
+
+    }
+  }
+}

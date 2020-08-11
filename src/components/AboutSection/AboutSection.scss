@@ -1,6 +1,7 @@
 @import "../variables";
 
 .about{
+  margin-top: 8rem;
   color: white; 
   font-size: 1.5rem;
   background: $primary;
@@ -32,37 +33,7 @@
   }
 }
 
-.send-email{
-  width: 90%;
-  margin: auto;
-  margin-top: -2.2rem;
-  padding: 1.5rem 0.7rem;
-  background: white;
-  border-radius: 3px;
-  box-shadow: 1px 1px 2px black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  h5{
-    font-size: 1.1rem;
-    margin-bottom: 0;
-  }
-  a{
-    position: relative;
-    background: white;
-    padding: 0.5rem 0.4rem;
-    color: $primary;
-    border: 2px solid $primary;
-    border-radius: 4px;
-    transition: all 100ms ease-out;
-    font-weight: bold;
-    &:hover{
-      text-decoration: none;
-      background: $primary;
-      color: $light;      
-    }
-  }
-}
+
 
 @media (min-width: 768px){
   .about{
@@ -80,17 +51,6 @@
       img{        
         max-width: 30%;
       }
-    }
-  }
-  .send-email{
-    width: 75%;
-    justify-content: space-between;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    a{
-      min-width: 25%;
-      text-align: center;
-
     }
   }
 }

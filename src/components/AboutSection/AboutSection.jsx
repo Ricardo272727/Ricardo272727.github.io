@@ -31,12 +31,6 @@ const AboutSection = props => {
     </Container>
 
     </section>
-     <div className="send-email">
-        <h5>Send me an email</h5>
-        <a 
-          href="mailto:cuanaloricardo@gmail.com?subject=Hola">
-        Contact me</a>
-     </div>
    </>
  );
 } 

@@ -1,18 +1,22 @@
 @import "../variables";
-
 .header-section{
-  background: $light;
+  background-image: url(/images/bg-colors.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   color: $secondary;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 50vh;
   text-align: center;
+  padding-top: 50%;
+  margin-bottom: 60%;
+  .circular-photo{
+    max-width: 45%;
+    margin: auto;
+  }
   h1{
-    font-size: 4rem;
+    font-size: 3rem;
   }
   h2{
-    font-size: 3rem;
+    font-size: 2rem;
   }
   p{
     font-size: 1.2rem;
@@ -21,24 +25,22 @@
 
 @media (min-width: 768px){
   .header-section{
-   height: 100vh;
-   text-align: left; 
-
-
+     height: 100vh;
+     text-align: center; 
+     padding-top: 20%;
+     margin-bottom: 25%;
     h1{
-      font-size: 8rem;
+      font-size: 6rem;
     }
     h2{
-      font-size: 5rem;
+      font-size: 4rem;
     }
     p{
       font-size: 2rem;
     } 
+    .circular-photo{
+      max-width: 30%;
+    }
   }
-
 }
-
-
-
-
 

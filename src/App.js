@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import '../node_modules/animate.css/animate.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import ContactButtonParallax from './components/ContactButtonParallax/ContactButtonParallax';
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
       <Element name="header">
         <HeaderSection/>
       </Element>
+      <ContactButtonParallax/>
       <Element name="about">
         <AboutSection/>
       </Element>
