@@ -12,7 +12,7 @@ const ProjectsSection = props => {
   <section className="projects">
     <Tab>Projects</Tab>
     <Container className="py-5">
-      <Row>
+      <Row className="wow fadeInLeft">
         {
           projects.map(p => (
            <Col xs={12} md={4} key={p.id}>
