@@ -7,7 +7,7 @@ const Navbar = (props) => {
   const [open, setOpen] = useState(false);
 
   const toggle = () => setOpen(!open);
-  const classUl = window.innerWidth >= 768 ? "" : (!open ? "hidden" : "");
+  const classUl = window.innerWidth >= 768 ? "" : !open ? "hidden" : "";
   const offsetScroll = -50;
 
   return (
@@ -22,8 +22,13 @@ const Navbar = (props) => {
           </Link>
         </li>
         <li>
-          <Link to="about" smooth="easeInQuad" duration={250} onClick={toggle} offset={offsetScroll}>
-
+          <Link
+            to="about"
+            smooth="easeInQuad"
+            duration={250}
+            onClick={toggle}
+            offset={offsetScroll}
+          >
             About
           </Link>
         </li>
@@ -36,6 +41,17 @@ const Navbar = (props) => {
             offset={offsetScroll}
           >
             Projects
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="experience"
+            smooth="easeInQuad"
+            duration={250}
+            onClick={toggle}
+            offset={offsetScroll}
+          >
+            Experience
           </Link>
         </li>
         <li>

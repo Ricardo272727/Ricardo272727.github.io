@@ -1,42 +1,46 @@
-import React, { useEffect } from 'react';
-import { Element } from 'react-scroll';
-import WOW from 'wowjs';
-import HeaderSection from './components/HeaderSection/HeaderSection';
-import AboutSection from './components/AboutSection/AboutSection';
-import ProjectsSection from './components/ProjectsSection/ProjectsSection';
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
-import '../node_modules/animate.css/animate.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import ContactButtonParallax from './components/ContactButtonParallax/ContactButtonParallax';
+import React, { useEffect } from "react";
+import { Element } from "react-scroll";
+import WOW from "wowjs";
+import HeaderSection from "./components/HeaderSection/HeaderSection";
+import AboutSection from "./components/AboutSection/AboutSection";
+import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import "../node_modules/animate.css/animate.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import ContactButtonParallax from "./components/ContactButtonParallax/ContactButtonParallax";
+import ExperienceSection from "./components/ExperienceSection/ExperienceSection";
 
 function App() {
   useEffect(() => {
     new WOW.WOW({ live: false }).init();
   });
-  
+
   useEffect(() => {
-    let loading = document.getElementById('loading');
-    if(loading){
-      loading.style.display = 'none';
+    let loading = document.getElementById("loading");
+    if (loading) {
+      loading.style.display = "none";
     }
   }, []);
 
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <Element name="header">
-        <HeaderSection/>
+        <HeaderSection />
       </Element>
-      <ContactButtonParallax/>
+      <ContactButtonParallax />
       <Element name="about">
-        <AboutSection/>
+        <AboutSection />
       </Element>
       <Element name="projects">
         <ProjectsSection />
       </Element>
-      <Footer/>
+      <Element name="experience">
+        <ExperienceSection />
+      </Element>
+      <Footer />
     </div>
   );
 }

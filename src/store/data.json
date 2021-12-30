@@ -2,41 +2,97 @@
   "header": {
     "title": "Hello!",
     "subtitle": "I'm Ricardo",
-    "text": "Computer science student and web developer",
-    "image": "/images/avatar.png"
+    "text": "Web/Android developer",
+    "image": "/images/yo.jpg"
   },
   "about": {
     "hello": "Hi, I'm Ricardo Cuanalo, software developer.",
-    "description": "Soy de méxico, tengo 21 años y soy estudiante de ciencias de la computación. \n\n Me interesa el desarrollo en la web, en especial el desarrollo de backend, aunque también he aprendido y trabajado en proyectos de frontend. Me considero un desarrollador fullstack, he desarrollado varios proyectos completamente, con el stack MERN,  para Tecnopubli MX y Vanguardia Radio. \n En general me interesan los retos de programación, algoritmos y problemas difíciles de resolver. \n\n Me gusta crear soluciones sencillas, sin adornos y sin complejidad innecesaria",
+    "description": "Soy de México, tengo 22 años y trabajo como desarrollador de front-end. En particular me especializo en aplicaciones web con ReactJS y NestJS. Me gusta el trabajo en equipo, soy paciente y curioso para aprender cosas nuevas. Me encanta ayudar a mis compañeros y compartir mi experiencia.",
     "photo": "/images/avatar.png",
     "text": [
       "I like to understand how the things work.",
       "I enjoy create amazing things",
       "I study in BUAP"
     ],
-    "subtext": "#js #reactjs #laravel #nodejs #mongodb"
+    "subtext": "#js #reactjs #nestjs #nodejs #mysql"
   },
   "projects": [
     {
       "id": 0,
       "name": "Streaming radio website",
       "link": "https://radioenlinea.click",
-      "description": "Web application to listen radio streaming (React, NodeJs, MySQL)",
+      "description": "Web application to listen radio streaming (React + NodeJs + MySQL)",
       "image": "RadioStreaming.png"
     },
     {
       "id": 1,
       "name": "Todo list app",
       "link": "https://github.com/Ricardo272727/todo-list-app",
-      "description": "To do list app colaborative, organize tasks in a team. (React, NodeJs, MongoDB)",
+      "description": "To do list app colaborative, organize tasks in a team. (React + NodeJs + MongoDB)",
       "image": "Tasks.png"
     },
     {
       "id": 2,
-      "name": "Piano with react",
+      "name": "Piano game",
       "link": "https://github.com/Ricardo272727/react-piano",
       "description": "A simple web application to play piano. (React)",
       "image": "Piano.png"
-    } 
+    },
+    {
+      "id": 3,
+      "name": "100 mexicanos dijeron game",
+      "link": "https://github.com/Ricardo272727/100-mexicanos-dijeron-react",
+      "description": "A funny game for the family, enjoy answer popular questions and compete with other team. (React)",
+      "image": "cien_mexicanos.png"
+    },
+    {
+      "id": 4,
+      "name": "Laboratory management system",
+      "link": "https://github.com/Ricardo272727/blog-management-system",
+      "description": "Platform for manage laboratories and inventory from school, (React + NodeJS + Mysql + Knex + Ajv)",
+      "image": "laboratory_management.png"
+    },
+    {
+      "id": 5,
+      "name": "React file browser cu - Library",
+      "link": "https://github.com/Ricardo272727/react-file-browser-cu",
+      "description": "Javascript library for display folders and files on a tree structure, faster and very customizable. (React)",
+      "image": "file_browser_cu.png"
+    },
+    {
+      "id": 6,
+      "name": "Online radio dashboard",
+      "link": "http://radioenlinea.click:3001",
+      "description": "Dashboard for manage streamers and online radio transmission",
+      "image": "radio_en_linea_dash.png"
+    },
+    {
+      "id": 7,
+      "name": "Browser code editor",
+      "link": "https://github.com/Ricardo272727/blog-management-system",
+      "description": "In progress... a simple browser code editor for js and react (React)",
+      "image": "browser_code_editor.png"
+    },
+    {
+      "id": 8,
+      "name": "Streaming radio apps",
+      "link": "https://play.google.com/store/apps/dev?id=7327780089688144648&hl=es_MX&gl=US",
+      "description": "Android apps for radio online, chat and listen music. (Android kotlin)",
+      "image": "apps.png"
+    }
+  ],
+  "experience": [
+    {
+      "id": 0,
+      "name": "TecnoPubliMX",
+      "link": "https://tecnopublimx.com",
+      "image": "tecnopubli.png"
+    },
+    {
+      "id": 1,
+      "name": "Octopy",
+      "link": "https://octopy.com",
+      "image": "octopy.png"    
+    }
   ]
 }

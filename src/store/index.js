@@ -3,10 +3,9 @@ import { ACTIONS } from './actions.js';
 import data from './data.json';
 
 const initialState = {
-
   data: data,
-  projects: data.projects
-
+  projects: data.projects,
+  experience: data.experience
 }
 
 const rootReducer = (state = initialState, action) => {
