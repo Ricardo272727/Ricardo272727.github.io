@@ -1,0 +1,10 @@
+{
+  "name": "Ricardo272727.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "repository": "https://github.com/Ricardo272727/Ricardo272727.github.io.git",
+  "author": "rsegura <cuanaloricardo@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
