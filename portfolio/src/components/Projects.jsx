@@ -119,9 +119,9 @@ export const Projects = () => {
         <Modal
           show
           onClose={() => setCurrentProject(null)}
-          className="flex justify-around items-start gap-5"
+          className="flex flex-col justify-start md:flex-row md:justify-around items-start gap-5 h-[80vh] md:h-auto overflow-y-scroll pt-16 md:pt-5"
         >
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <Title className="pb-6">{currentProject.name}</Title>
             <img
               src={currentProject.image}
@@ -130,7 +130,7 @@ export const Projects = () => {
             />
           </div>
 
-          <div className="w-1/2 text-gray-300 pt-6">
+          <div className="w-full md:w-1/2 text-gray-300 pt-6">
             {currentProject.details.map((detail, key) => (
               <div key={key}>
                 <p>{detail}</p>

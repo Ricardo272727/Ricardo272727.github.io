@@ -7,7 +7,8 @@ export const Contact = () => {
       <Title className="text-3xl my-12">Contacto</Title>
 
       <p className="text-gray-500">Envia un correo electrónico a: </p>
-      <a className="text-gray-700 text-2xl" href="mailto:cuanaloricardo@outlook.com">cuanaloricardo@outlook.com</a>
+      <a className="text-gray-700 text-2xl mb-20" href="mailto:cuanaloricardo@outlook.com">cuanaloricardo@outlook.com</a>
+      
     </SimpleBox>
   );
 };

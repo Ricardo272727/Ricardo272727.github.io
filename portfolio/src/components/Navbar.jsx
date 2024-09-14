@@ -21,7 +21,7 @@ export const Navbar = ({ items = [] }) => {
           <a
             className={`
             ${hash === item.value ? 'border-b-white' : 'border-b-transparent '}
-            font-bold text-gray-300 py-6 px-3 border-b-2`} 
+            font-bold text-gray-300 py-5 px-2 md:py-6 md:px-3 border-b-2`} 
             key={key}
             href={item.value}
           >
@@ -30,7 +30,7 @@ export const Navbar = ({ items = [] }) => {
         ))}
       </div>
       <div className="flex">
-        <a href="#contact" className="bg-green-500 text-white font-bold text-lg px-6 py-2">Contacto</a>
+        <a href="#contact" className="bg-green-500 text-white font-bold text-md px-2 py-1 md:px-6 md:py-2">Contacto</a>
       </div>
     </nav>
   );

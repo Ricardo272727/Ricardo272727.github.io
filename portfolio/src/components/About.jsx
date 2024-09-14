@@ -11,8 +11,8 @@ export const About = () => {
         Mi prioridad es optimizar y generar soluciones prácticas para ti
       </h1>
 
-      <div className="md:w-[60vw] w-[90vw] flex justify-center gap-8">
-        <SimpleBox className="w-full md:w-[33%]">
+      <div className="md:w-[60vw] w-[90vw] flex flex-col justify-start md:flex-row md:justify-center gap-8">
+        <SimpleBox className="w-full md:w-[33%] h-[50vh] md:h-auto">
           <Title className="text-black">¿Qué puedo hacer?</Title>
           <p>
             Puedo crear sistemas automatizados, páginas web para promocionar tu
@@ -41,7 +41,7 @@ export const About = () => {
             </p>
           </SimpleBox>
         </div>
-        <SimpleBox className="w-full md:w-[33%]">
+        <SimpleBox className="w-full md:w-[33%] h-[50vh] md:h-auto">
           <Title>¿Cómo te puedo ayudar?</Title>
           <p>
             ¿Necesitas optimizar tus procesos y tediosos archivos de excel?,
@@ -58,25 +58,25 @@ export const About = () => {
         </SimpleBox>
       </div>
 
-      <div className="md:w-[60vw] w-[90vw] flex justify-around gap-8 mt-36">
-        <div className="flex justify-center w-[70%]">
-          <div className="w-[50%] border-none px-0 py-0 p-0">
+      <div className="w-[90vw] md:w-[60vw] flex flex-col justify-start md:flex-row md:justify-around gap-8 mt-36">
+        <div className="flex flex-col justify-start  md:flex-row md:justify-center w-full md:w-[70%]">
+          <div className="w-full md:w-[50%] border-none px-0 py-0 p-0">
             <img
               src="/credentials-system.webp"
               alt="Last project"
               className="w-full"
             />
           </div>
-          <SimpleBox className="w-[50%] text-white border-blue-500 bg-blue-500">
+          <SimpleBox className="w-full md:w-[50%] text-white border-blue-500 bg-blue-500">
             <Title>Este es mi último proyecto</Title>
             <p>Sistema de control de asistencias con códigos QR y chips NFC</p>
             <p>
-              Reportes en excel, gráficos de asistencia por persona, analisis de
-              datos en tiempo real y{" "}
+              Reportes en excel, gráficos de asistencia por persona y analisis de
+              datos en tiempo real
             </p>
           </SimpleBox>
         </div>
-        <SimpleBox className="text-white border-gray-800 bg-gray-800 w-[30%]">
+        <SimpleBox className="text-white border-gray-800 bg-gray-800 w-full md:w-[30%]">
           <Title>Notas finales:</Title>
           <p>
             Si tu negocio necesita ser más ágil o buscas empezar a agregar

@@ -9,7 +9,7 @@ export const Modal = ({
   return (
     <div
       id="my-modal"
-      className={`fixed inset-0 bg-gray-800 bg-opacity-75
+      className={`fixed w-[100vw] h-[100vh] inset-0 bg-gray-800 bg-opacity-75 z-50
         flex items-center justify-center ${!show ? "hidden" : ""}`}
     >
       <div

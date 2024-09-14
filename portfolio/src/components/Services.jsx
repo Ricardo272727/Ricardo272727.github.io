@@ -70,7 +70,7 @@ export const services = [
 
 export const Services = () => {
   return (
-    <section className="bg-gradient-to-r from-gray-900 to-gray-800 py-36 text-center text-white">
+    <section id="services" className="bg-gradient-to-r from-gray-900 to-gray-800 py-36 text-center text-white">
       <Title className="text-3xl">Te puedo ayudar en:</Title>
       <div className="flex flex-wrap w-[90vw] md:w-[60vw] mx-auto my-20">
         {services.map((service, key) => (

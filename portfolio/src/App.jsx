@@ -11,6 +11,7 @@ import { Services } from "./components/Services";
 const navbarItems = [
   { label: "Acerca de", value: "#about" },
   { label: "Proyectos", value: "#projects" },
+  { label: "Servicios", value: "#services" },
 ];
 //TODO: Services section, to display skills, aws, api development, system design, cloud, databases, mobile apps, automate processes, server management
 // TODO: Why choose us, add all the points that chat gpt said
