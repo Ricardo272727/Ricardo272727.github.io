@@ -15,8 +15,8 @@ export const Navbar = ({ items = [] }) => {
     }, [])
 
   return (
-    <nav className="w-full flex justify-around items-center fixed top-0 left-0 bg-black/65">
-      <div className="flex justify-start items-center gap-6">
+    <nav className="w-[100vw] flex justify-around items-center fixed top-0 left-0 bg-black/65 z-50">
+      <div className="flex justify-start items-center gap-2 md:gap-6">
         {items.map((item, key) => (
           <a
             className={`
@@ -30,7 +30,7 @@ export const Navbar = ({ items = [] }) => {
         ))}
       </div>
       <div className="flex">
-        <button className="bg-green-500 text-white font-bold text-lg px-6 py-2">Contact me</button>
+        <a href="#contact" className="bg-green-500 text-white font-bold text-lg px-6 py-2">Contacto</a>
       </div>
     </nav>
   );

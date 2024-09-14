@@ -11,11 +11,11 @@ export const MainHeader = () => {
     >
       <div className="bg-black/85 text-white px-12 py-10 md:w-[40vw]">
         <h1 className="text-4xl font-bold">Ricardo Cuanalo</h1>
-        <h3 className="text-2xl mt-5">Software Engineer</h3>
-        <p className="text-xl mt-3 mb-9">Experienced software developer focused on cloud solutions</p>
-        <button className="bg-blue-600 text-white px-6 py-2">
-          See my work
-        </button>
+        <h3 className="text-2xl mt-5">Ingeniero de software</h3>
+        <p className="text-xl mt-3 mb-9">Desarrollador especializado en soluciones en la nube y sistemas ERP</p>
+        <a href="#projects" className="bg-blue-600 text-white px-6 py-2">
+          Explora mi trabajo
+        </a>
       </div>
     </header>
   );
