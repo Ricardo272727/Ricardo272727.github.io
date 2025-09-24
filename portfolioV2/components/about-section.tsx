@@ -5,8 +5,8 @@ import { Award, BookOpen, Coffee, Globe, Heart, Target, TrendingUp, Users } from
 const achievements = [
   {
     icon: Award,
-    title: "AWS Certified Solutions Architect",
-    description: "Professional level certification",
+    title: "Computer Science Engineer",
+    description: "Bridging theory and practice",
   },
   {
     icon: TrendingUp,
@@ -63,7 +63,7 @@ export function AboutSection() {
           <div>
             <div className="prose prose-lg max-w-none">
               <p className="text-lg leading-relaxed text-foreground mb-6">
-                With over 5 years of experience in software development, I specialize in creating scalable, efficient
+                With over 7 years of experience in software development, I specialize in creating scalable, efficient
                 solutions that drive business growth. My expertise spans cloud architecture, microservices, and
                 automation, with a proven track record of reducing costs while improving performance.
               </p>

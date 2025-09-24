@@ -12,7 +12,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Code2 className="h-8 w-8 text-primary" />
-              <span className="font-bold text-xl font-space-grotesk">DevPortfolio</span>
+              <span className="font-bold text-xl font-space-grotesk">Ricardo Cuanalo</span>
             </div>
             <p className="text-muted-foreground max-w-md leading-relaxed">
               Expert software developer specializing in cloud architecture, microservices, and automation. Building
@@ -99,7 +99,6 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-muted-foreground">© 2024 DevPortfolio. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <button className="text-sm text-muted-foreground hover:text-primary transition-colors">
               Privacy Policy

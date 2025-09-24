@@ -1,14 +1,28 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Label } from "@/components/ui/label"
-import { Mail, MessageSquare, Calendar, MapPin, Clock, Send, CheckCircle } from "lucide-react"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import {
+  Mail,
+  MessageSquare,
+  Calendar,
+  MapPin,
+  Clock,
+  Send,
+  CheckCircle,
+} from "lucide-react";
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -17,47 +31,70 @@ export function ContactSection() {
     company: "",
     project: "",
     message: "",
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSubmitted, setIsSubmitted] = useState(false)
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
+    e.preventDefault();
+    setIsSubmitting(true);
+    try {
+      const response = await fetch(
+        "https://portfolio-backend-qj17.onrender.com/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            fullName: formData.name,
+            projectDetails: formData.message,
+            projectType: formData.project,
+            email: formData.email,
+            company: formData.company,
+          }),
+        }
+      );
+      console.log(await response.json());
+    } catch (error) {
+      console.log({ error });
+    }
     // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000))
-
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    setIsSubmitting(false);
+    setIsSubmitted(true);
 
     // Reset form after 3 seconds
     setTimeout(() => {
-      setIsSubmitted(false)
+      setIsSubmitted(false);
       setFormData({
         name: "",
         email: "",
         company: "",
         project: "",
         message: "",
-      })
-    }, 3000)
-  }
+      });
+    }, 3000);
+  };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
-    }))
-  }
+    }));
+  };
 
   return (
     <section id="contact" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold font-space-grotesk text-balance mb-4">Let's Work Together</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-space-grotesk text-balance mb-4">
+            Let's Work Together
+          </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-            Ready to transform your ideas into scalable solutions? Let's discuss your project.
+            Ready to transform your ideas into scalable solutions? Let's discuss
+            your project.
           </p>
         </div>
 
@@ -72,13 +109,14 @@ export function ContactSection() {
                     <span>Get In Touch</span>
                   </CardTitle>
                   <CardDescription>
-                    I'm always interested in discussing new opportunities and challenging projects.
+                    I'm always interested in discussing new opportunities and
+                    challenging projects.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-primary" />
-                    <span className="text-sm">hello@developer.com</span>
+                    <span className="text-sm">cuanaloricardo@gmail.com</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Calendar className="h-5 w-5 text-primary" />
@@ -90,15 +128,21 @@ export function ContactSection() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Clock className="h-5 w-5 text-primary" />
-                    <span className="text-sm">Usually responds within 24 hours</span>
+                    <span className="text-sm">
+                      Usually responds within 24 hours
+                    </span>
                   </div>
                 </CardContent>
               </Card>
 
               <Card className="border-border/50">
                 <CardHeader>
-                  <CardTitle className="font-space-grotesk">Project Types</CardTitle>
-                  <CardDescription>I specialize in these types of projects:</CardDescription>
+                  <CardTitle className="font-space-grotesk">
+                    Project Types
+                  </CardTitle>
+                  <CardDescription>
+                    I specialize in these types of projects:
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
@@ -132,15 +176,24 @@ export function ContactSection() {
           <div className="lg:col-span-2">
             <Card className="border-border/50">
               <CardHeader>
-                <CardTitle className="font-space-grotesk">Start a Conversation</CardTitle>
-                <CardDescription>Tell me about your project and I'll get back to you within 24 hours.</CardDescription>
+                <CardTitle className="font-space-grotesk">
+                  Start a Conversation
+                </CardTitle>
+                <CardDescription>
+                  Tell me about your project and I'll get back to you within 24
+                  hours.
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 {isSubmitted ? (
                   <div className="text-center py-12">
                     <CheckCircle className="h-16 w-16 text-primary mx-auto mb-4" />
-                    <h3 className="text-xl font-bold font-space-grotesk mb-2">Message Sent!</h3>
-                    <p className="text-muted-foreground">Thank you for reaching out. I'll get back to you soon.</p>
+                    <h3 className="text-xl font-bold font-space-grotesk mb-2">
+                      Message Sent!
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Thank you for reaching out. I'll get back to you soon.
+                    </p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -206,7 +259,12 @@ export function ContactSection() {
                       />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                    <Button
+                      type="submit"
+                      size="lg"
+                      className="w-full"
+                      disabled={isSubmitting}
+                    >
                       {isSubmitting ? (
                         <>
                           <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
@@ -227,5 +285,5 @@ export function ContactSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

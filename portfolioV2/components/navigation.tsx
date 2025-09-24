@@ -1,37 +1,50 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Menu, X, Code2, Download } from "lucide-react"
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X, Code2, Download } from "lucide-react";
+import { useLink } from "@/hooks/use-link";
 
 export function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const { downloadFile } = useLink();
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
-    setIsOpen(false)
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    setIsOpen(false);
+  };
+
+  const downloadCV = () => {
+    console.log("Downloading file...")
+    downloadFile(
+      "https://portfolio-backend-qj17.onrender.com/static/CV-Ricardo-Segura-Cuanalo.pdf"
+    );
   }
 
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/95 backdrop-blur-sm border-b border-border" : "bg-transparent"
+        scrolled
+          ? "bg-background/95 backdrop-blur-sm border-b border-border"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
             <Code2 className="h-8 w-8 text-primary" />
-            <span className="font-bold text-xl font-space-grotesk">Ricardo Cuanalo</span>
+            <span className="font-bold text-xl font-space-grotesk">
+              Ricardo Cuanalo
+            </span>
           </div>
 
           {/* Desktop Navigation */}
@@ -66,7 +79,7 @@ export function Navigation() {
             >
               Contact
             </button>
-            <Button size="sm" className="ml-4">
+            <Button size="sm" className="ml-4" onClick={downloadCV}>
               <Download className="h-4 w-4 mr-2" />
               Resume
             </Button>
@@ -74,8 +87,16 @@ export function Navigation() {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>
@@ -115,7 +136,7 @@ export function Navigation() {
                 Contact
               </button>
               <div className="px-3 py-2">
-                <Button size="sm" className="w-full">
+                <Button size="sm" className="w-full" onClick={downloadCV}>
                   <Download className="h-4 w-4 mr-2" />
                   Resume
                 </Button>
@@ -125,5 +146,5 @@ export function Navigation() {
         )}
       </div>
     </nav>
-  )
+  );
 }
